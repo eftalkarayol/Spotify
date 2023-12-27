@@ -1,12 +1,12 @@
 import { renderSongs } from "./ui.js";
-
+import config from "./config.js";
 // yapılan istekler için kullanılan yarlar
 const url =
   "https://shazam.p.rapidapi.com/charts/track?locale=en-US&pageSize=20&startFrom=0";
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "2c03ac69fdmshd7b01af13a6d801p1f965ejsnf7a3e83148c4",
+    "X-RapidAPI-Key": config.RAPIDAPI_KEY,
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
   },
 };
